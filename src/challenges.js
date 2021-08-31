@@ -2,7 +2,7 @@
 function compareTrue(boolean1, boolean2) {
   if (boolean1 === true && boolean2 === true) {
     return true;
-  }else{
+  } else {
     return false;
   }
 }
@@ -10,20 +10,23 @@ function compareTrue(boolean1, boolean2) {
 // Desafio 2
 function calcArea(base, height) {
   // fórmula area triangulo: (base * altura)/2
-  return (base * height)/2
+  return (base * height) / 2;
 }
 
 // Desafio 3
 function splitSentence(string) {
   let phrase = string;
-  let separa = phrase.split(" ");
+  let separa = phrase.split(' ');
   return separa;
 }
-splitSentence("go trybe")
+
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(array) {
+  let firstIten = array[0];
+  let lastIten = array[array.length - 1 ];
+  return lastIten + ', ' + firstIten;
 }
+
 
 // Desafio 5
 function footballPoints() {
