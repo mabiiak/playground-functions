@@ -27,11 +27,18 @@ function concatName(array) {
   return lastIten + ', ' + firstIten;
 }
 
-
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  // wins 3 ties 1
+  let pontos;
+  if (wins > 1 || ties > 1) {
+    pontos = wins * 3 + ties * 1;    
+  } else { 
+    pontos = 0 
+  }
+  return pontos;
 }
+console.log(footballPoints(0,0))
 
 // Desafio 6
 function highestCount() {
