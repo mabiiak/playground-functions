@@ -8,8 +8,9 @@ function compareTrue(boolean1, boolean2) {
 }
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base, height) {
+  // fórmula area triangulo: (base * altura)/2
+  return (base * height)/2
 }
 
 // Desafio 3
