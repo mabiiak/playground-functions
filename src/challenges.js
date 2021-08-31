@@ -2,6 +2,8 @@
 function compareTrue(boolean1, boolean2) {
   if (boolean1 === true && boolean2 === true) {
     return true;
+  } else {
+    return false;
   }
 }
 
@@ -55,26 +57,85 @@ function fizzBuzz(array) {
   for (let index = 0; index <= array.length-1; index +=1){
 
     if (array[index] % 3 === 0 && array[index] % 5 === 0) {
-      newArray.push("fizzBuzz");
-
+      newArray.push('fizzBuzz');
     } else if (array[index] % 5 === 0) {
-      newArray.push ("buzz");
-
+      newArray.push ('buzz');
     } else if (array[index] % 3 === 0) {
-      newArray.push("fizz");
+      newArray.push('fizz');
 
-    } else { newArray.push("bug!")};
+    } else { newArray.push('bug!' ); }
   }
   return newArray;
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(texto) {
+  // um let fora do for para armazenar resultados
+  let copyText = texto;
+  let result = "";
+
+  // for para percorrer a string
+  for (let index = 0; index <= texto.length-1 ; index += 1) {
+  // um if para testar cada coisa e jogar na let o resultado
+    if (copyText[index] !== 'a' && 
+        copyText[index] !== 'e' &&
+        copyText[index] !== 'i' &&
+        copyText[index] !== 'o' &&
+        copyText[index] !== 'u') {
+      result = result + copyText[index];
+
+    } else if (copyText[index] === 'a'){
+      result = result + 1;
+
+    } else if (copyText[index] === 'e') {
+      result = result + 2;
+
+    } else if (copyText[index] === 'i') {
+      result = result + 3;
+
+    } else if (copyText[index] === 'o') {
+      result = result + 4;
+
+    } else if (copyText[index] === 'u') {
+      result = result + 5;
+    }
+  
+  }
+ return result;
+ console.log(result)
 }
-function decode() {
-  // seu código aqui
+function decode(number) {
+  let copyNumber = number;
+  let result = "";
+
+  // for para percorrer a string
+  for (let index = 0; index <= number.length-1 ; index += 1) {
+  // um if para testar cada coisa e jogar na let o resultado
+    if (copyNumber[index] === '1'){
+      result = result + 'a';
+
+    } else if (copyNumber[index] === '2') {
+      result = result + 'e';
+
+    } else if (copyNumber[index] === '3') {
+      result = result + 'i';
+
+    } else if (copyNumber[index] === '4') {
+      result = result + 'o';
+
+    } else if (copyNumber[index] === '5') {
+      result = result + 'u';
+    } else { 
+      result = result + copyNumber[index];
+    }
+  
+  }
+ return result;
+ console.log(result)
 }
+
+
+
 
 module.exports = {
   calcArea,
@@ -88,3 +149,4 @@ module.exports = {
   highestCount,
   splitSentence,
 };
+
