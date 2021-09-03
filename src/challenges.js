@@ -41,10 +41,38 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount () {
-  // seu código aqui
-}
+function highestCount (arrayNum) {
+  /** 
+  recebe um array de numeros - OK
+  criar variavel que copia esse array - OK 
+  criar for que percorre a variavel - OK 
+  testar qual é o maior - OK
+  armazenar resultado em variavel2 - OK
+  criar um segundo for que percorre o array 
+  testar se for é igual ao numero maior (variavel2) contar +1
+  */
 
+  let copyArrayNumber = arrayNum;
+  let test = copyArrayNumber[0];
+  let theBigger = test;
+  let repeatTheBigger = 0;
+  
+  for (let index = 1; index < copyArrayNumber.length ; index += 1) {
+     if (copyArrayNumber[index] > theBigger) {
+      theBigger = copyArrayNumber[index];
+     } else if (test < copyArrayNumber[index] && theBigger < test) {
+       theBigger = test;
+     }
+  }
+
+  for (let ind = 0 ; ind < copyArrayNumber.length ; ind +=1) {
+    if (theBigger === copyArrayNumber[ind]) {
+      repeatTheBigger = repeatTheBigger +1;
+    }
+  }
+  return repeatTheBigger;
+}
+highestCount([1,9,2,3,9,5,7]);
 // Desafio 7
 function catAndMouse(mouse,cat1,cat2) {
   // cat1 e cat2 , mouse
