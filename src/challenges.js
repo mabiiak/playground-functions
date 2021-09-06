@@ -44,14 +44,6 @@ function footballPoints(wins, ties) {
 
 // Desafio 6
 function highestCount(arrayNum) {
-  /**recebe um array de numeros - OK
-  criar variavel que copia esse array - OK
-  criar for que percorre a variavel - OK
-  testar qual é o maior - OK
-  armazenar resultado em variavel2 - OK
-  criar um segundo for que percorre o array
-  testar se for é igual ao numero maior (variavel2) contar +1
-  */
   let copyArrayNumber = arrayNum;
   let test = copyArrayNumber[0];
   let theBigger = test;
@@ -95,7 +87,7 @@ function catAndMouse(mouse, cat1, cat2) {
 function fizzBuzz(array) {
   let newArray = [];
 
-  for (let index = 0; index <= array.length - 1; index += 1) {
+  for (let index = 0; index < array.length; index += 1) {
     if (array[index] % 3 === 0 && array[index] % 5 === 0) {
       newArray.push('fizzBuzz');
     } else if (array[index] % 5 === 0) {
@@ -114,13 +106,13 @@ function encode(texto) {
   let result = '';
 
   // for para percorrer a string
-  for (let index = 0; index <= texto.length - 1; index += 1) {
+  for (let index = 0; index < texto.length; index += 1) {
   // um if para testar cada coisa e jogar na let o resultado
     if (copyText[index] !== 'a'
-    && copyText[index] !== 'e'
-    && copyText[index] !== 'i'
-    && copyText[index] !== 'o'
-    && copyText[index] !== 'u') {
+    || copyText[index] !== 'e'
+    || copyText[index] !== 'i'
+    || copyText[index] !== 'o'
+    || copyText[index] !== 'u') {
       result += copyText[index];
     } else if (copyText[index] === 'a') {
       result += 1;
@@ -142,7 +134,7 @@ function decode(number) {
   let result = '';
 
   // for para percorrer a string
-  for (let index = 0; index <= number.length - 1; index += 1) {
+  for (let index = 0; index < number.length; index += 1) {
   // um if para testar cada coisa e jogar na let o resultado
     if (copyNumber[index] === '1') {
       result += 'a';
