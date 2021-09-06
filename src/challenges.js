@@ -132,10 +132,7 @@ function encode(texto) {
 function decode(number) {
   let copyNumber = number;
   let result = '';
-
-  // for para percorrer a string
   for (let index = 0; index < number.length; index += 1) {
-  // um if para testar cada coisa e jogar na let o resultado
     if (copyNumber[index] === '1') {
       result += 'a';
     } else if (copyNumber[index] === '2') {
