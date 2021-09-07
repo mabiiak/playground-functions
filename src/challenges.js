@@ -106,13 +106,13 @@ function encode(texto) {
   let result = '';
 
   // for para percorrer a string
-  for (let index = 0; index < texto.length; index += 1) {
+  for (let index = 0; index <= texto.length - 1; index += 1) {
   // um if para testar cada coisa e jogar na let o resultado
     if (copyText[index] !== 'a'
-    || copyText[index] !== 'e'
-    || copyText[index] !== 'i'
-    || copyText[index] !== 'o'
-    || copyText[index] !== 'u') {
+    && copyText[index] !== 'e'
+    && copyText[index] !== 'i'
+    && copyText[index] !== 'o'
+    && copyText[index] !== 'u') {
       result += copyText[index];
     } else if (copyText[index] === 'a') {
       result += 1;
@@ -132,7 +132,7 @@ function encode(texto) {
 function decode(number) {
   let copyNumber = number;
   let result = '';
-  for (let index = 0; index < number.length; index += 1) {
+  for (let index = 0; index <= number.length - 1; index += 1) {
     if (copyNumber[index] === '1') {
       result += 'a';
     } else if (copyNumber[index] === '2') {
