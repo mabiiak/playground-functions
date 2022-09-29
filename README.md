@@ -2,7 +2,7 @@
 
 Este é um projeto que foi desenvolvido durante o curso de Desenvolvimento Web na Trybe.
 
-# Habilidades desenvolvidas
+## Habilidades desenvolvidas
 
 - Escrever códigos em JavaScript que usam variáveis e tipos primitivos;
 - Utilizar conceitos da linguagem como a tipagem dinâmica e operadores lógicos/aritméticos/de atribuição no seu código;
@@ -11,9 +11,12 @@ Este é um projeto que foi desenvolvido durante o curso de Desenvolvimento Web n
 - Utilizar o comando for e for/in;
 - Manipular objetos;
 
-## Desenvolvimento
+# Desenvolvimento
 
-## Antes de começar a desenvolver
+<details>
+  <summary>
+      Antes de começar a desenvolver
+  </summary>
 
 1. Clone o repositório
   * `git clone git@github.com:mabiiak/playground-functions.git`
@@ -55,37 +58,38 @@ Este é um projeto que foi desenvolvido durante o curso de Desenvolvimento Web n
   * Adicione uma descrição para o _Pull Request_, um título que o identifique, e clique no botão verde _"Create pull request"_. Crie da seguinte forma: `[SEU NOME] Nome do seu pull request`  
   * **Não se preocupe em preencher mais nada por enquanto!**
   * Volte até a [página de _Pull Requests_ do repositório](https://github.com/mabiiak/-playground-functions/pulls) e confira que o seu _Pull Request_ está criado.
+</details>
 
 ## Requisitos do projeto
 
-  ✅ 1 Crie uma função usando o operador &&
+    ✅ 1 Crie uma função usando o operador &&
 
-  ✅ 2 Crie uma função que calcule a área de um triângulo
+    ✅ 2 Crie uma função que calcule a área de um triângulo
 
-  ✅ 3 Crie uma função que divida a frase
+    ✅ 3 Crie uma função que divida a frase
 
-  ✅ 4 Crie uma função que use concatenação de strings
+    ✅ 4 Crie uma função que use concatenação de strings
 
-  ✅ 5 Crie uma função que calcule a quantidade de pontos no futebol
+    ✅ 5 Crie uma função que calcule a quantidade de pontos no futebol
 
-  ✅ 6 Crie uma função que calcule a repetição do maior número
+    ✅ 6 Crie uma função que calcule a repetição do maior número
 
-  ✅ 7 Crie uma função de Caça ao Rato
+    ✅ 7 Crie uma função de Caça ao Rato
 
-  ✅ 8 Crie uma função FizzBuzz
+    ✅ 8 Crie uma função FizzBuzz
 
-  ✅ 9 Crie uma função que Codifique e Decodifique
+    ✅ 9 Crie uma função que Codifique e Decodifique
 
-  ✅ 10 Crie uma função de Lista de Tecnologias
+    ✅ 10 Crie uma função de Lista de Tecnologias
 
 <details>
   <summary>
       Requisitos Bônus
   </summary>
 
-    ✅ 11 Crie uma função de Número de Telefone
+    ❌ 11 Crie uma função de Número de Telefone
 
-    ✅ 12 Crie uma função de Condição de existência de um triângulo
+    ❌ 12 Crie uma função de Condição de existência de um triângulo
 
     ✅ 13 Crie uma função de boas vindas ao Bar da Trybe!
 </details>
